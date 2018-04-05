@@ -31,7 +31,7 @@ boolean_operator    -> AND | OR | XOR\
 relational_operator -> GREATER | GTEQ | LESS | LTEQ | NOTEQUAL\
 primary             -> ID | NUM | REALNUM | STRING_CONSTANT | bool_const\
 bool_const          -> TRUE | FALSE\
-condition           -> LPAREN expr RPAREN\
+condition           -> LPAREN expr RPAREN
 
 ## Tokens
 LBRACE:           {\
@@ -64,10 +64,10 @@ FALSE:            FALSE\
 STRING_CONSTANT:  (letter | digit)* \
 ID:               letter (letter | digit)* \
 NUM:              0 | (pdigit digit*)\
-REALNUM:          NUM . digit digit* \
+REALNUM:          NUM . digit digit*
 
 where
 
 letter: a | b | c | ... | z | A | B | C | ... | Z\
 digit: 0 | 1 | 2 | ... | 9\
-pdigit: 1 | 2 | 3 | ... | 9\
+pdigit: 1 | 2 | 3 | ... | 9
